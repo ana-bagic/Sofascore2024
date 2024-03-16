@@ -19,6 +19,9 @@
 		D2D9DF692BA5750E00702087 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF682BA5750E00702087 /* SnapKit */; };
 		D2D9DF6B2BA5750E00702087 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF6A2BA5750E00702087 /* SnapKit-Dynamic */; };
 		D2D9DF6D2BA5750E00702087 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF6A2BA5750E00702087 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D2D9DF702BA5FB5C00702087 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF6F2BA5FB5C00702087 /* League.swift */; };
+		D2D9DF732BA5FF0800702087 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF722BA5FF0800702087 /* Match.swift */; };
+		D2D9DF752BA5FF3F00702087 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF742BA5FF3F00702087 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		D239D90B2B99FC3400C843E2 /* SofascoreAcademyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofascoreAcademyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D239D90F2B99FC3400C843E2 /* SofascoreAcademyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofascoreAcademyUITests.swift; sourceTree = "<group>"; };
 		D239D9112B99FC3400C843E2 /* SofascoreAcademyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofascoreAcademyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2D9DF6F2BA5FB5C00702087 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		D2D9DF722BA5FF0800702087 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		D2D9DF742BA5FF3F00702087 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 		D239D8ED2B99FC3100C843E2 /* SofascoreAcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D2D9DF6E2BA5F91A00702087 /* Model */,
 				D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */,
 				D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */,
 				D239D8F22B99FC3200C843E2 /* ViewController.swift */,
@@ -151,6 +158,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2D9DF6E2BA5F91A00702087 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2D9DF6F2BA5FB5C00702087 /* League.swift */,
+				D2D9DF722BA5FF0800702087 /* Match.swift */,
+				D2D9DF742BA5FF3F00702087 /* Team.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D9DF752BA5FF3F00702087 /* Team.swift in Sources */,
 				D239D8F32B99FC3200C843E2 /* ViewController.swift in Sources */,
 				D239D8EF2B99FC3100C843E2 /* AppDelegate.swift in Sources */,
+				D2D9DF702BA5FB5C00702087 /* League.swift in Sources */,
+				D2D9DF732BA5FF0800702087 /* Match.swift in Sources */,
 				D239D8F12B99FC3200C843E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
