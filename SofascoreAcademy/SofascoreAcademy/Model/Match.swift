@@ -20,5 +20,5 @@ struct Match {
 
 enum MatchStatus {
     
-    case finished, running, notStarted
+    case finished, inProgress, notStarted
 }
