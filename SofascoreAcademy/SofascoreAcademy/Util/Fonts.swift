@@ -10,9 +10,12 @@ import UIKit
 
 struct Fonts {
     
-    static let boldFont: UIFont = loadFont(name: "Roboto-Bold")
-    static let regularFont: UIFont = loadFont(name: "Roboto-Regular")
-    static let regularCondensedFont: UIFont = loadFont(name: "RobotoCondensed-Regular")
+    static let boldFont: UIFont = loadFont(name: "Roboto Bold")
+    static let regularFont: UIFont = loadFont(name: "Roboto")
+    static let regularCondensedFont: UIFont = loadFont(name: "Roboto Condensed")
+    
+    static let regularSize: CGFloat = 14
+    static let smallSize: CGFloat = 12
 
     static func loadFont(name: String) -> UIFont {
         guard let font: UIFont = UIFont(name: name, size: UIFont.labelFontSize) else {

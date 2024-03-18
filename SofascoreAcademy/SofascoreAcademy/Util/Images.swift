@@ -13,6 +13,8 @@ struct Images {
     static let barcelonaLogo: UIImage = loadImage(name: "barcelona")
     static let manchesterLogo: UIImage = loadImage(name: "manchester-united")
     static let laligaLogo: UIImage = loadImage(name: "laliga")
+    
+    static let arrow: UIImage = loadImage(name: "arrow")
 
     static func loadImage(name: String) -> UIImage {
         guard let image: UIImage = UIImage(named: name) else {

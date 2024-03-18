@@ -27,6 +27,12 @@
 		D2D9DF882BA60CE000702087 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF872BA60CE000702087 /* Images.swift */; };
 		D2D9DF8A2BA60E7400702087 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF892BA60E7400702087 /* Colors.swift */; };
 		D2D9DF8C2BA610ED00702087 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF8B2BA610ED00702087 /* DataMock.swift */; };
+		D2D9DF8F2BA615C400702087 /* LeagueHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */; };
+		D2D9DF902BA63F4500702087 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2D9DF812BA6067A00702087 /* Roboto-Regular.ttf */; };
+		D2D9DF912BA63F4900702087 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2D9DF822BA6067D00702087 /* RobotoCondensed-Regular.ttf */; };
+		D2D9DF922BA63F4D00702087 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2D9DF802BA6067700702087 /* Roboto-Bold.ttf */; };
+		D2D9DF962BA63FF600702087 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF952BA63FF600702087 /* MatchView.swift */; };
+		D2D9DF982BA6400E00702087 /* LeagueComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,9 @@
 		D2D9DF872BA60CE000702087 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D2D9DF892BA60E7400702087 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D2D9DF8B2BA610ED00702087 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
+		D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueHeaderView.swift; sourceTree = "<group>"; };
+		D2D9DF952BA63FF600702087 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueComponentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +147,12 @@
 		D239D8ED2B99FC3100C843E2 /* SofascoreAcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D2D9DF942BA63F8000702087 /* Controller */,
+				D2D9DF8D2BA615AE00702087 /* View */,
 				D2D9DF762BA6029900702087 /* Util */,
 				D2D9DF6E2BA5F91A00702087 /* Model */,
 				D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */,
 				D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */,
-				D239D8F22B99FC3200C843E2 /* ViewController.swift */,
 				D239D8F72B99FC3400C843E2 /* Assets.xcassets */,
 				D239D8F92B99FC3400C843E2 /* LaunchScreen.storyboard */,
 				D239D8FC2B99FC3400C843E2 /* Info.plist */,
@@ -205,6 +215,24 @@
 				D2D9DF802BA6067700702087 /* Roboto-Bold.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		D2D9DF8D2BA615AE00702087 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */,
+				D2D9DF952BA63FF600702087 /* MatchView.swift */,
+				D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2D9DF942BA63F8000702087 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D239D8F22B99FC3200C843E2 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +349,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D9DF902BA63F4500702087 /* Roboto-Regular.ttf in Resources */,
 				D239D8FB2B99FC3400C843E2 /* LaunchScreen.storyboard in Resources */,
+				D2D9DF922BA63F4D00702087 /* Roboto-Bold.ttf in Resources */,
+				D2D9DF912BA63F4900702087 /* RobotoCondensed-Regular.ttf in Resources */,
 				D239D8F82B99FC3400C843E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,10 +383,13 @@
 				D2D9DF752BA5FF3F00702087 /* Team.swift in Sources */,
 				D2D9DF862BA608F800702087 /* Strings.swift in Sources */,
 				D239D8F32B99FC3200C843E2 /* ViewController.swift in Sources */,
+				D2D9DF982BA6400E00702087 /* LeagueComponentView.swift in Sources */,
 				D2D9DF882BA60CE000702087 /* Images.swift in Sources */,
 				D239D8EF2B99FC3100C843E2 /* AppDelegate.swift in Sources */,
 				D2D9DF702BA5FB5C00702087 /* League.swift in Sources */,
+				D2D9DF8F2BA615C400702087 /* LeagueHeaderView.swift in Sources */,
 				D2D9DF732BA5FF0800702087 /* Match.swift in Sources */,
+				D2D9DF962BA63FF600702087 /* MatchView.swift in Sources */,
 				D239D8F12B99FC3200C843E2 /* SceneDelegate.swift in Sources */,
 				D2D9DF8C2BA610ED00702087 /* DataMock.swift in Sources */,
 			);
