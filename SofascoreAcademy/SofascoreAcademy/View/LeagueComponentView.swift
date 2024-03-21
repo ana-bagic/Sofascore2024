@@ -11,50 +11,35 @@ import SofaAcademic
 
 class LeagueComponentView: BaseView {
     
-    let leagueHeader: LeagueHeaderView
-    let match1View: MatchView
-    let match2View: MatchView
-    let match3View: MatchView
-    let match4View: MatchView
-    let matchesStack: UIStackView = UIStackView()
+    let leagueHeaderView: LeagueHeaderView
+    let matchesStackView: UIStackView = UIStackView()
     
     init(league: League, matches: Array<Match>) {
-        leagueHeader = LeagueHeaderView(league: league)
-        match1View = MatchView(match: matches[0])
-        match2View = MatchView(match: matches[1])
-        match3View = MatchView(match: matches[2])
-        match4View = MatchView(match: matches[3])
+        leagueHeaderView = LeagueHeaderView(league: league)
+        for match in matches {
+            matchesStackView.addArrangedSubview(MatchView(match: match))
+        }
         
         super.init()
     }
     
     override func addViews() {
-        addSubview(leagueHeader)
-        
-        matchesStack.addArrangedSubview(match1View)
-        matchesStack.addArrangedSubview(match2View)
-        matchesStack.addArrangedSubview(match3View)
-        matchesStack.addArrangedSubview(match4View)
-        
-        addSubview(matchesStack)
+        addSubview(leagueHeaderView)
+        addSubview(matchesStackView)
     }
 
     override func styleViews() {
-        matchesStack.axis = .vertical
+        matchesStackView.axis = .vertical
     }
     
     override func setupConstraints() {
-        self.snp.makeConstraints() {
-            $0.bottom.equalTo(matchesStack.snp.bottom)
-        }
-        
-        leagueHeader.snp.makeConstraints() {
+        leagueHeaderView.snp.makeConstraints() {
             $0.top.leading.trailing.equalToSuperview()
         }
         
-        matchesStack.snp.makeConstraints() {
-            $0.top.equalTo(leagueHeader.snp.bottom)
-            $0.leading.trailing.equalToSuperview()
+        matchesStackView.snp.makeConstraints() {
+            $0.top.equalTo(leagueHeaderView.snp.bottom)
+            $0.leading.trailing.bottom.equalToSuperview()
         }
     }
 

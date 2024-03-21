@@ -24,8 +24,7 @@ class ViewController: UIViewController {
         
         leagueComponent.snp.makeConstraints() {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(30)
-            $0.leading.equalToSuperview()
-            $0.width.equalToSuperview()
+            $0.leading.width.equalToSuperview()
         }
         
         leagueComponent.backgroundColor = .surface1

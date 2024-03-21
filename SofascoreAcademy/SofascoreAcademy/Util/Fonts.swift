@@ -30,15 +30,15 @@ extension UIFont {
     }
 
     class var tabular: UIFont {
-        return loadFont(name: "Roboto CondensedRegular", size: 14.0)
+        return loadFont(name: "Roboto Condensed", size: 14.0)
     }
 
     class var bodyParagraph: UIFont {
-        return loadFont(name: "Roboto Regular", size: 14.0)
+        return loadFont(name: "Roboto", size: 14.0)
     }
 
     class var body: UIFont {
-        return loadFont(name: "Roboto Regular", size: 14.0)
+        return loadFont(name: "Roboto", size: 14.0)
     }
 
     class var assistive: UIFont {
@@ -46,7 +46,7 @@ extension UIFont {
     }
 
     class var micro: UIFont {
-        return loadFont(name: "Roboto CondensedRegular", size: 12.0)
+        return loadFont(name: "Roboto Condensed", size: 12.0)
     }
     
     static func loadFont(name: String, size: Double) -> UIFont {
