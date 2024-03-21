@@ -49,12 +49,12 @@ class LeagueComponentView: BaseView {
         }
         
         leagueHeader.snp.makeConstraints() {
-            $0.top.left.right.equalToSuperview()
+            $0.top.leading.trailing.equalToSuperview()
         }
         
         matchesStack.snp.makeConstraints() {
             $0.top.equalTo(leagueHeader.snp.bottom)
-            $0.left.right.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
         }
     }
 

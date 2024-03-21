@@ -54,13 +54,13 @@ class LeagueHeaderView: BaseView {
         
         leagueLogo.snp.makeConstraints() {
             $0.top.equalToSuperview().inset(12)
-            $0.left.equalToSuperview().inset(16)
-            $0.width.height.equalTo(32)
+            $0.leading.equalToSuperview().inset(16)
+            $0.size.equalTo(32)
         }
         
         horizontalStack.snp.makeConstraints() {
             $0.top.equalToSuperview().inset(16)
-            $0.left.equalToSuperview().inset(80)
+            $0.leading.equalToSuperview().inset(80)
         }
     }
 

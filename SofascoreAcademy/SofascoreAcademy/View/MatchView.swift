@@ -138,72 +138,69 @@ class MatchView: BaseView {
         }
         
         timeCellView.snp.makeConstraints() {
-            $0.top.equalToSuperview()
-            $0.left.equalToSuperview()
+            $0.top.leading.equalToSuperview()
             $0.width.equalTo(64)
             $0.height.equalTo(56)
         }
         
         time.snp.makeConstraints() {
             $0.top.equalToSuperview().inset(10)
-            $0.left.equalToSuperview().inset(4)
-            $0.right.equalToSuperview().inset(4)
+            $0.leading.trailing.equalToSuperview().inset(4)
         }
         
         minutes.snp.makeConstraints() {
             $0.top.equalToSuperview().inset(30)
-            $0.left.equalToSuperview().inset(4)
-            $0.right.equalToSuperview().inset(4)
+            $0.leading.trailing.equalToSuperview().inset(4)
         }
         
         divider.snp.makeConstraints() {
             $0.top.equalToSuperview().inset(8)
-            $0.left.equalToSuperview().inset(63)
+            $0.leading.equalToSuperview().inset(63)
             $0.width.equalTo(1)
             $0.height.equalTo(40)
         }
         
         team1.snp.makeConstraints() {
             $0.top.equalToSuperview().inset(10)
-            $0.left.equalToSuperview().inset(80)
-            $0.right.equalToSuperview().inset(64)
+            $0.leading.equalToSuperview().inset(80)
+            $0.trailing.equalToSuperview().inset(64)
         }
         
         team1Logo.snp.makeConstraints() {
-            $0.top.left.equalToSuperview()
-            $0.width.height.equalTo(16)
+            $0.top.leading.equalToSuperview()
+            $0.size.equalTo(16)
         }
         
         team1Name.snp.makeConstraints() {
-            $0.left.equalTo(team1Logo.snp.right).offset(8)
-            $0.top.right.equalToSuperview()
+            $0.leading.equalTo(team1Logo.snp.trailing).offset(8)
+            $0.top.trailing.equalToSuperview()
         }
         
         team2.snp.makeConstraints() {
             $0.bottom.equalToSuperview().inset(10)
-            $0.left.equalToSuperview().inset(80)
-            $0.right.equalToSuperview().inset(64)
+            $0.leading.equalToSuperview().inset(80)
+            $0.trailing.equalToSuperview().inset(64)
         }
         
         team2Logo.snp.makeConstraints() {
-            $0.bottom.left.equalToSuperview()
-            $0.width.height.equalTo(16)
+            $0.bottom.leading.equalToSuperview()
+            $0.size.equalTo(16)
         }
         
         team2Name.snp.makeConstraints() {
-            $0.left.equalTo(team2Logo.snp.right).offset(8)
-            $0.bottom.right.equalToSuperview()
+            $0.leading.equalTo(team2Logo.snp.trailing).offset(8)
+            $0.bottom.trailing.equalToSuperview()
         }
         
         team1Score.snp.makeConstraints() {
             $0.top.equalToSuperview().inset(10)
-            $0.right.equalToSuperview().inset(16)
+            $0.trailing.equalToSuperview().inset(16)
             $0.width.equalTo(32)
         }
         
         team2Score.snp.makeConstraints() {
             $0.bottom.equalToSuperview().inset(10)
-            $0.right.equalToSuperview().inset(16)
+            $0.trailing.equalToSuperview().inset(16)
             $0.width.equalTo(32)
         }
     }

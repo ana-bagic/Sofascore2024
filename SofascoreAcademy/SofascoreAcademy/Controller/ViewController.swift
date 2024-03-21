@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         leagueComponent.snp.makeConstraints() {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(30)
-            $0.left.equalTo(view.safeAreaLayoutGuide.snp.left)
+            $0.leading.equalToSuperview()
             $0.width.equalToSuperview()
         }
         
