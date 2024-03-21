@@ -5,7 +5,6 @@
 //  Created by Akademija on 16.03.2024..
 //
 
-import Foundation
 import UIKit
 import SofaAcademic
 
@@ -13,11 +12,11 @@ class LeagueHeaderView: BaseView {
     
     var leagueModel: League
     
-    let leagueLogo: UIImageView = UIImageView()
-    let country: UILabel = UILabel()
-    let leagueName: UILabel = UILabel()
-    let arrow: UIImageView = UIImageView(image: Images.arrow)
-    let horizontalStack: UIStackView = UIStackView()
+    let leagueLogoImageView: UIImageView = UIImageView()
+    let countryLabel: UILabel = UILabel()
+    let leagueNameLabel: UILabel = UILabel()
+    let arrowImageView: UIImageView = UIImageView(image: Images.arrow)
+    let horizontalStackView: UIStackView = UIStackView()
     
     init(league: League) {
         leagueModel = league
@@ -25,42 +24,46 @@ class LeagueHeaderView: BaseView {
     }
     
     override func addViews() {
-        horizontalStack.addArrangedSubview(country)
-        horizontalStack.addArrangedSubview(arrow)
-        horizontalStack.addArrangedSubview(leagueName)
+        horizontalStackView.addArrangedSubview(countryLabel)
+        horizontalStackView.addArrangedSubview(arrowImageView)
+        horizontalStackView.addArrangedSubview(leagueNameLabel)
         
-        addSubview(leagueLogo)
-        addSubview(horizontalStack)
+        addSubview(leagueLogoImageView)
+        addSubview(horizontalStackView)
     }
 
     override func styleViews() {
-        leagueLogo.image = leagueModel.logoImage
+        leagueLogoImageView.image = leagueModel.logoImage
         
-        country.text = leagueModel.countryName
-        country.font = .headline3
-        country.textColor = .onSurfaceLv1
+        horizontalStackView.alignment = .center
+
+        countryLabel.text = leagueModel.countryName
+        countryLabel.font = .headline3
+        countryLabel.textColor = .onSurfaceLv1
         
-        leagueName.text = leagueModel.leagueName
-        leagueName.font = .headline3
-        leagueName.textColor = .onSurfaceLv2
+        leagueNameLabel.text = leagueModel.leagueName
+        leagueNameLabel.font = .headline3
+        leagueNameLabel.textColor = .onSurfaceLv2
         
-        arrow.tintColor = .onSurfaceLv2
+        arrowImageView.tintColor = .onSurfaceLv2
     }
     
     override func setupConstraints() {
-        self.snp.makeConstraints() {
-            $0.height.equalTo(56)
-        }
-        
-        leagueLogo.snp.makeConstraints() {
-            $0.top.equalToSuperview().inset(12)
+        leagueLogoImageView.snp.makeConstraints() {
+            $0.top.bottom.equalToSuperview().inset(12)
             $0.leading.equalToSuperview().inset(16)
             $0.size.equalTo(32)
         }
         
-        horizontalStack.snp.makeConstraints() {
-            $0.top.equalToSuperview().inset(16)
-            $0.leading.equalToSuperview().inset(80)
+        horizontalStackView.snp.makeConstraints() {
+            $0.top.bottom.equalToSuperview().inset(16)
+            $0.trailing.lessThanOrEqualToSuperview().inset(16)
+            $0.leading.equalTo(leagueLogoImageView.snp.trailing).offset(32)
+            $0.centerY.equalTo(leagueLogoImageView)
+        }
+        
+        arrowImageView.snp.makeConstraints() {
+            $0.size.equalTo(24)
         }
     }
 

@@ -5,7 +5,6 @@
 //  Created by Akademija on 16.03.2024..
 //
 
-import Foundation
 import UIKit
 import SofaAcademic
 
