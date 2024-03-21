@@ -9,16 +9,18 @@ import Foundation
 
 struct Match {
     
-    let team1: Team
-    let team2: Team
-    let team1Score: Int?
-    let team2Score: Int?
-    let startTime: Date
-    let status: MatchStatus
+    let homeTeam: Team
+    let awayTeam: Team
+    let homeTeamScore: Int?
+    let awayTeamScore: Int?
+    let startTimestamp: Int
+    let matchStatus: MatchStatus
     let currentMinute: Int?
 }
 
 enum MatchStatus {
     
-    case finished, inProgress, notStarted
+    case notStarted
+    case inProgress
+    case finished
 }

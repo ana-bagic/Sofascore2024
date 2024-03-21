@@ -10,8 +10,8 @@ import UIKit
 
 struct League {
     
-    let name: String
+    let leagueName: String
     // country will probably be another class or enum later
-    let country: String
-    let logo: UIImage
+    let countryName: String
+    let logoImage: UIImage
 }

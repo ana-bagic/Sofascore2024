@@ -57,25 +57,25 @@ class MatchView: BaseView {
     override func styleViews() {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
-        time.text = dateFormatter.string(from: matchModel.startTime)
+        time.text = dateFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(matchModel.startTimestamp)))
         time.font = Fonts.regularCondensedFont.withSize(Fonts.smallSize)
         time.textColor = Colors.onSurfaceLv2
         time.textAlignment = .center
         
         divider.backgroundColor = Colors.onSurfaceLv4
         
-        team1Logo.image = matchModel.team1.logo
-        team2Logo.image = matchModel.team2.logo
+        team1Logo.image = matchModel.homeTeam.logoImage
+        team2Logo.image = matchModel.awayTeam.logoImage
         
         minutes.font = Fonts.regularCondensedFont.withSize(Fonts.smallSize)
         minutes.textColor = Colors.onSurfaceLv2
         minutes.textAlignment = .center
         
-        team1Name.text = matchModel.team1.name
+        team1Name.text = matchModel.homeTeam.teamName
         team1Name.font = Fonts.regularFont.withSize(Fonts.regularSize)
         team1Name.textColor = Colors.onSurfaceLv1
         
-        team2Name.text = matchModel.team2.name
+        team2Name.text = matchModel.awayTeam.teamName
         team2Name.font = Fonts.regularFont.withSize(Fonts.regularSize)
         team2Name.textColor = Colors.onSurfaceLv1
         
@@ -86,14 +86,35 @@ class MatchView: BaseView {
         team2Score.font = Fonts.regularFont.withSize(Fonts.regularSize)
         team2Score.textColor = Colors.onSurfaceLv1
         team2Score.textAlignment = .right
-        switch matchModel.status {
+        switch matchModel.matchStatus {
+        case .notStarted:
+            minutes.text = "-"
+        case .inProgress:
+            guard let minute = matchModel.currentMinute else {
+                return
+            }
+            minutes.text = String(minute) + "'"
+            minutes.textColor = Colors.live
+            
+            guard let score1 = matchModel.homeTeamScore else {
+                return
+            }
+            guard let score2 = matchModel.awayTeamScore else {
+                return
+            }
+            
+            team1Score.text = String(score1)
+            team2Score.text = String(score2)
+            
+            team1Score.textColor = Colors.live
+            team2Score.textColor = Colors.live
         case .finished:
             minutes.text = Strings.finishedMatch
             
-            guard let score1 = matchModel.team1Score else {
+            guard let score1 = matchModel.homeTeamScore else {
                 return
             }
-            guard let score2 = matchModel.team2Score else {
+            guard let score2 = matchModel.awayTeamScore else {
                 return
             }
             
@@ -108,27 +129,6 @@ class MatchView: BaseView {
                 team2Name.textColor = Colors.onSurfaceLv2
                 team2Score.textColor = Colors.onSurfaceLv2
             }
-        case .inProgress:
-            guard let minute = matchModel.currentMinute else {
-                return
-            }
-            minutes.text = String(minute) + "'"
-            minutes.textColor = Colors.live
-            
-            guard let score1 = matchModel.team1Score else {
-                return
-            }
-            guard let score2 = matchModel.team2Score else {
-                return
-            }
-            
-            team1Score.text = String(score1)
-            team2Score.text = String(score2)
-            
-            team1Score.textColor = Colors.live
-            team2Score.textColor = Colors.live
-        case .notStarted:
-            minutes.text = "-"
         }
     }
     

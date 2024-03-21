@@ -34,13 +34,13 @@ class LeagueHeaderView: BaseView {
     }
 
     override func styleViews() {
-        leagueLogo.image = leagueModel.logo
+        leagueLogo.image = leagueModel.logoImage
         
-        country.text = leagueModel.country
+        country.text = leagueModel.countryName
         country.font = Fonts.boldFont.withSize(Fonts.regularSize)
         country.textColor = Colors.onSurfaceLv1
         
-        leagueName.text = leagueModel.name
+        leagueName.text = leagueModel.leagueName
         leagueName.font = Fonts.boldFont.withSize(Fonts.regularSize)
         leagueName.textColor = Colors.onSurfaceLv2
         

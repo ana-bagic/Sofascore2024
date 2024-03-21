@@ -10,6 +10,6 @@ import UIKit
 
 struct Team {
     
-    let name: String
-    let logo: UIImage
+    let teamName: String
+    let logoImage: UIImage
 }
