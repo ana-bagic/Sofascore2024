@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D239D8EF2B99FC3100C843E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */; };
-		D239D8F12B99FC3200C843E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */; };
 		D239D8F32B99FC3200C843E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D8F22B99FC3200C843E2 /* ViewController.swift */; };
 		D239D8F82B99FC3400C843E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D239D8F72B99FC3400C843E2 /* Assets.xcassets */; };
 		D239D8FB2B99FC3400C843E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D239D8F92B99FC3400C843E2 /* LaunchScreen.storyboard */; };
@@ -69,7 +68,6 @@
 /* Begin PBXFileReference section */
 		D239D8EB2B99FC3100C843E2 /* SofascoreAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofascoreAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D239D8F22B99FC3200C843E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D239D8F72B99FC3400C843E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D239D8FA2B99FC3400C843E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				D2D9DF762BA6029900702087 /* Util */,
 				D2D9DF6E2BA5F91A00702087 /* Model */,
 				D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */,
-				D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */,
 				D239D8F72B99FC3400C843E2 /* Assets.xcassets */,
 				D239D8F92B99FC3400C843E2 /* LaunchScreen.storyboard */,
 				D239D8FC2B99FC3400C843E2 /* Info.plist */,
@@ -390,7 +387,6 @@
 				D2D9DF8F2BA615C400702087 /* LeagueHeaderView.swift in Sources */,
 				D2D9DF732BA5FF0800702087 /* Match.swift in Sources */,
 				D2D9DF962BA63FF600702087 /* MatchView.swift in Sources */,
-				D239D8F12B99FC3200C843E2 /* SceneDelegate.swift in Sources */,
 				D2D9DF8C2BA610ED00702087 /* DataMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
