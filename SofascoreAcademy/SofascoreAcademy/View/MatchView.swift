@@ -58,33 +58,33 @@ class MatchView: BaseView {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
         time.text = dateFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(matchModel.startTimestamp)))
-        time.font = Fonts.regularCondensedFont.withSize(Fonts.smallSize)
-        time.textColor = Colors.onSurfaceLv2
+        time.font = .micro
+        time.textColor = .onSurfaceLv2
         time.textAlignment = .center
         
-        divider.backgroundColor = Colors.onSurfaceLv4
+        divider.backgroundColor = .onSurfaceLv4
         
         team1Logo.image = matchModel.homeTeam.logoImage
         team2Logo.image = matchModel.awayTeam.logoImage
         
-        minutes.font = Fonts.regularCondensedFont.withSize(Fonts.smallSize)
-        minutes.textColor = Colors.onSurfaceLv2
+        minutes.font = .micro
+        minutes.textColor = .onSurfaceLv2
         minutes.textAlignment = .center
         
         team1Name.text = matchModel.homeTeam.teamName
-        team1Name.font = Fonts.regularFont.withSize(Fonts.regularSize)
-        team1Name.textColor = Colors.onSurfaceLv1
+        team1Name.font = .body
+        team1Name.textColor = .onSurfaceLv1
         
         team2Name.text = matchModel.awayTeam.teamName
-        team2Name.font = Fonts.regularFont.withSize(Fonts.regularSize)
-        team2Name.textColor = Colors.onSurfaceLv1
+        team2Name.font = .body
+        team2Name.textColor = .onSurfaceLv1
         
-        team1Score.font = Fonts.regularFont.withSize(Fonts.regularSize)
-        team1Score.textColor = Colors.onSurfaceLv1
+        team1Score.font = .body
+        team1Score.textColor = .onSurfaceLv1
         team1Score.textAlignment = .right
         
-        team2Score.font = Fonts.regularFont.withSize(Fonts.regularSize)
-        team2Score.textColor = Colors.onSurfaceLv1
+        team2Score.font = .body
+        team2Score.textColor = .onSurfaceLv1
         team2Score.textAlignment = .right
         switch matchModel.matchStatus {
         case .notStarted:
@@ -94,7 +94,7 @@ class MatchView: BaseView {
                 return
             }
             minutes.text = String(minute) + "'"
-            minutes.textColor = Colors.live
+            minutes.textColor = .specificLive
             
             guard let score1 = matchModel.homeTeamScore else {
                 return
@@ -106,8 +106,8 @@ class MatchView: BaseView {
             team1Score.text = String(score1)
             team2Score.text = String(score2)
             
-            team1Score.textColor = Colors.live
-            team2Score.textColor = Colors.live
+            team1Score.textColor = .specificLive
+            team2Score.textColor = .specificLive
         case .finished:
             minutes.text = Strings.finishedMatch
             
@@ -122,12 +122,12 @@ class MatchView: BaseView {
             team2Score.text = String(score2)
             
             if score1 < score2 || score1 == score2 {
-                team1Name.textColor = Colors.onSurfaceLv2
-                team1Score.textColor = Colors.onSurfaceLv2
+                team1Name.textColor = .onSurfaceLv2
+                team1Score.textColor = .onSurfaceLv2
             }
             if score1 > score2 || score1 == score2 {
-                team2Name.textColor = Colors.onSurfaceLv2
-                team2Score.textColor = Colors.onSurfaceLv2
+                team2Name.textColor = .onSurfaceLv2
+                team2Score.textColor = .onSurfaceLv2
             }
         }
     }

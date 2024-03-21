@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .secondaryVariant
         
         let league = createMockLeague()
         let matches = createMockMatches()
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             $0.width.equalToSuperview()
         }
         
-        leagueComponent.backgroundColor = .white
+        leagueComponent.backgroundColor = .surface1
     }
 
 }

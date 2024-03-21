@@ -37,14 +37,14 @@ class LeagueHeaderView: BaseView {
         leagueLogo.image = leagueModel.logoImage
         
         country.text = leagueModel.countryName
-        country.font = Fonts.boldFont.withSize(Fonts.regularSize)
-        country.textColor = Colors.onSurfaceLv1
+        country.font = .headline3
+        country.textColor = .onSurfaceLv1
         
         leagueName.text = leagueModel.leagueName
-        leagueName.font = Fonts.boldFont.withSize(Fonts.regularSize)
-        leagueName.textColor = Colors.onSurfaceLv2
+        leagueName.font = .headline3
+        leagueName.textColor = .onSurfaceLv2
         
-        arrow.tintColor = Colors.onSurfaceLv2
+        arrow.tintColor = .onSurfaceLv2
     }
     
     override func setupConstraints() {
