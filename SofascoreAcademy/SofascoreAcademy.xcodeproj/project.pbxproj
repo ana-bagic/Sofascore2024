@@ -14,6 +14,13 @@
 		D239D9062B99FC3400C843E2 /* SofascoreAcademyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D9052B99FC3400C843E2 /* SofascoreAcademyTests.swift */; };
 		D239D9102B99FC3400C843E2 /* SofascoreAcademyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D90F2B99FC3400C843E2 /* SofascoreAcademyUITests.swift */; };
 		D239D9122B99FC3400C843E2 /* SofascoreAcademyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D9112B99FC3400C843E2 /* SofascoreAcademyUITestsLaunchTests.swift */; };
+		D2A8909D2BACA99D0021EF9D /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */; };
+		D2A890A02BACBD610021EF9D /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8909F2BACBD610021EF9D /* MatchViewModel.swift */; };
+		D2A890A22BACBDCC0021EF9D /* TeamScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */; };
+		D2A890A42BADAF130021EF9D /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A32BADAF130021EF9D /* DateHelper.swift */; };
+		D2A890A62BADB5330021EF9D /* MatchTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A52BADB5330021EF9D /* MatchTimeView.swift */; };
+		D2A890A82BADB5900021EF9D /* MatchTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A72BADB5900021EF9D /* MatchTimeViewModel.swift */; };
+		D2A890AA2BAF32D80021EF9D /* MiscUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A92BAF32D80021EF9D /* MiscUtil.swift */; };
 		D2D9DF642BA5017500702087 /* SofaAcademic in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF632BA5017500702087 /* SofaAcademic */; };
 		D2D9DF692BA5750E00702087 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF682BA5750E00702087 /* SnapKit */; };
 		D2D9DF6B2BA5750E00702087 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF6A2BA5750E00702087 /* SnapKit-Dynamic */; };
@@ -77,6 +84,13 @@
 		D239D90B2B99FC3400C843E2 /* SofascoreAcademyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofascoreAcademyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D239D90F2B99FC3400C843E2 /* SofascoreAcademyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofascoreAcademyUITests.swift; sourceTree = "<group>"; };
 		D239D9112B99FC3400C843E2 /* SofascoreAcademyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofascoreAcademyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
+		D2A8909F2BACBD610021EF9D /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreViewModel.swift; sourceTree = "<group>"; };
+		D2A890A32BADAF130021EF9D /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		D2A890A52BADB5330021EF9D /* MatchTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTimeView.swift; sourceTree = "<group>"; };
+		D2A890A72BADB5900021EF9D /* MatchTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTimeViewModel.swift; sourceTree = "<group>"; };
+		D2A890A92BAF32D80021EF9D /* MiscUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscUtil.swift; sourceTree = "<group>"; };
 		D2D9DF6F2BA5FB5C00702087 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		D2D9DF722BA5FF0800702087 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		D2D9DF742BA5FF3F00702087 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
@@ -174,6 +188,16 @@
 			path = SofascoreAcademyUITests;
 			sourceTree = "<group>";
 		};
+		D2A8909E2BACBCED0021EF9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8909F2BACBD610021EF9D /* MatchViewModel.swift */,
+				D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */,
+				D2A890A72BADB5900021EF9D /* MatchTimeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D2D9DF672BA5750E00702087 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +224,8 @@
 				D2D9DF872BA60CE000702087 /* Images.swift */,
 				D2D9DF892BA60E7400702087 /* Colors.swift */,
 				D2D9DF8B2BA610ED00702087 /* DataMock.swift */,
+				D2A890A32BADAF130021EF9D /* DateHelper.swift */,
+				D2A890A92BAF32D80021EF9D /* MiscUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -217,9 +243,12 @@
 		D2D9DF8D2BA615AE00702087 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D2A8909E2BACBCED0021EF9D /* ViewModel */,
 				D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */,
 				D2D9DF952BA63FF600702087 /* MatchView.swift */,
 				D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */,
+				D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */,
+				D2A890A52BADB5330021EF9D /* MatchTimeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,16 +405,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D9DF842BA6079500702087 /* Fonts.swift in Sources */,
+				D2A890A22BACBDCC0021EF9D /* TeamScoreViewModel.swift in Sources */,
+				D2A8909D2BACA99D0021EF9D /* TeamScoreView.swift in Sources */,
+				D2A890AA2BAF32D80021EF9D /* MiscUtil.swift in Sources */,
 				D2D9DF8A2BA60E7400702087 /* Colors.swift in Sources */,
 				D2D9DF752BA5FF3F00702087 /* Team.swift in Sources */,
 				D2D9DF862BA608F800702087 /* Strings.swift in Sources */,
 				D239D8F32B99FC3200C843E2 /* ViewController.swift in Sources */,
 				D2D9DF982BA6400E00702087 /* LeagueComponentView.swift in Sources */,
+				D2A890A02BACBD610021EF9D /* MatchViewModel.swift in Sources */,
+				D2A890A42BADAF130021EF9D /* DateHelper.swift in Sources */,
 				D2D9DF882BA60CE000702087 /* Images.swift in Sources */,
 				D239D8EF2B99FC3100C843E2 /* AppDelegate.swift in Sources */,
+				D2A890A82BADB5900021EF9D /* MatchTimeViewModel.swift in Sources */,
 				D2D9DF702BA5FB5C00702087 /* League.swift in Sources */,
 				D2D9DF8F2BA615C400702087 /* LeagueHeaderView.swift in Sources */,
 				D2D9DF732BA5FF0800702087 /* Match.swift in Sources */,
+				D2A890A62BADB5330021EF9D /* MatchTimeView.swift in Sources */,
 				D2D9DF962BA63FF600702087 /* MatchView.swift in Sources */,
 				D2D9DF8C2BA610ED00702087 /* DataMock.swift in Sources */,
 			);

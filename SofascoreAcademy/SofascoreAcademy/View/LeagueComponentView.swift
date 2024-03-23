@@ -16,7 +16,8 @@ class LeagueComponentView: BaseView {
     init(league: League, matches: Array<Match>) {
         leagueHeaderView = LeagueHeaderView(league: league)
         for match in matches {
-            matchesStackView.addArrangedSubview(MatchView(match: match))
+            let matchViewModel: MatchViewModel = MatchViewModel(matchModel: match)
+            matchesStackView.addArrangedSubview(MatchView(matchModel: matchViewModel))
         }
         
         super.init()
