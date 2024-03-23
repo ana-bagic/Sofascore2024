@@ -30,7 +30,6 @@
 		D2D9DF752BA5FF3F00702087 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF742BA5FF3F00702087 /* Team.swift */; };
 		D2D9DF842BA6079500702087 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF832BA6079500702087 /* Fonts.swift */; };
 		D2D9DF862BA608F800702087 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF852BA608F800702087 /* Strings.swift */; };
-		D2D9DF882BA60CE000702087 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF872BA60CE000702087 /* Images.swift */; };
 		D2D9DF8A2BA60E7400702087 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF892BA60E7400702087 /* Colors.swift */; };
 		D2D9DF8C2BA610ED00702087 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF8B2BA610ED00702087 /* DataMock.swift */; };
 		D2D9DF8F2BA615C400702087 /* LeagueHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */; };
@@ -99,7 +98,6 @@
 		D2D9DF822BA6067D00702087 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		D2D9DF832BA6079500702087 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		D2D9DF852BA608F800702087 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		D2D9DF872BA60CE000702087 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D2D9DF892BA60E7400702087 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D2D9DF8B2BA610ED00702087 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
 		D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueHeaderView.swift; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 				D2D9DF7F2BA6066F00702087 /* fonts */,
 				D2D9DF832BA6079500702087 /* Fonts.swift */,
 				D2D9DF852BA608F800702087 /* Strings.swift */,
-				D2D9DF872BA60CE000702087 /* Images.swift */,
 				D2D9DF892BA60E7400702087 /* Colors.swift */,
 				D2D9DF8B2BA610ED00702087 /* DataMock.swift */,
 				D2A890A32BADAF130021EF9D /* DateHelper.swift */,
@@ -415,7 +412,6 @@
 				D2D9DF982BA6400E00702087 /* LeagueComponentView.swift in Sources */,
 				D2A890A02BACBD610021EF9D /* MatchViewModel.swift in Sources */,
 				D2A890A42BADAF130021EF9D /* DateHelper.swift in Sources */,
-				D2D9DF882BA60CE000702087 /* Images.swift in Sources */,
 				D239D8EF2B99FC3100C843E2 /* AppDelegate.swift in Sources */,
 				D2A890A82BADB5900021EF9D /* MatchTimeViewModel.swift in Sources */,
 				D2D9DF702BA5FB5C00702087 /* League.swift in Sources */,
@@ -597,6 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MSJ826473;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SofascoreAcademy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -623,6 +620,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MSJ826473;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SofascoreAcademy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

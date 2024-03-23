@@ -10,8 +10,8 @@ import SofaAcademic
 
 class LeagueComponentView: BaseView {
     
-    let leagueHeaderView: LeagueHeaderView
-    let matchesStackView: UIStackView = UIStackView()
+    private let leagueHeaderView: LeagueHeaderView
+    private let matchesStackView: UIStackView = UIStackView()
     
     init(league: League, matches: Array<Match>) {
         leagueHeaderView = LeagueHeaderView(league: league)

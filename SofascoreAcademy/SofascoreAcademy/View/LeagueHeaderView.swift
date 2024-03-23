@@ -10,13 +10,13 @@ import SofaAcademic
 
 class LeagueHeaderView: BaseView {
     
-    var leagueModel: League
+    private var leagueModel: League
     
-    let leagueLogoImageView: UIImageView = UIImageView()
-    let countryLabel: UILabel = UILabel()
-    let leagueNameLabel: UILabel = UILabel()
-    let arrowImageView: UIImageView = UIImageView(image: Images.arrow)
-    let horizontalStackView: UIStackView = UIStackView()
+    private let leagueLogoImageView: UIImageView = UIImageView()
+    private let countryLabel: UILabel = UILabel()
+    private let leagueNameLabel: UILabel = UILabel()
+    private let arrowImageView: UIImageView = UIImageView(image: .arrow)
+    private let horizontalStackView: UIStackView = UIStackView()
     
     init(league: League) {
         leagueModel = league

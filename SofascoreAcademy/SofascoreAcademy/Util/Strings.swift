@@ -11,4 +11,3 @@ struct Strings {
     
     static let finishedMatch: String = "FT"
 }
-

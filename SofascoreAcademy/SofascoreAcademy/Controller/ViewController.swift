@@ -5,12 +5,12 @@
 //  Created by Akademija on 07.03.2024..
 //
 
-import SnapKit
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
     
-    let leagueComponent: LeagueComponentView = LeagueComponentView(league: createMockLeague(), matches: createMockMatches())
+    private let leagueComponent: LeagueComponentView = LeagueComponentView(league: createMockLeague(), matches: createMockMatches())
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,11 +10,11 @@ import SofaAcademic
 
 class TeamScoreView: BaseView {
     
-    let teamScoreViewModel: TeamScoreViewModel
+    private let teamScoreViewModel: TeamScoreViewModel
     
-    let teamLogoImageView: UIImageView = UIImageView()
-    let teamNameLabel: UILabel = UILabel()
-    let teamScoreLabel: UILabel = UILabel()
+    private let teamLogoImageView: UIImageView = UIImageView()
+    private let teamNameLabel: UILabel = UILabel()
+    private let teamScoreLabel: UILabel = UILabel()
     
     init(teamScoreViewModel: TeamScoreViewModel) {
         self.teamScoreViewModel = teamScoreViewModel

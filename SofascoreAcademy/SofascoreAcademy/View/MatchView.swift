@@ -5,14 +5,14 @@
 //  Created by Akademija on 16.03.2024..
 //
 
-import SofaAcademic
 import UIKit
+import SofaAcademic
 
 class MatchView: BaseView {
     
-    let matchTimeView: MatchTimeView
-    let homeTeamView: TeamScoreView
-    let awayTeamView: TeamScoreView
+    private let matchTimeView: MatchTimeView
+    private let homeTeamView: TeamScoreView
+    private let awayTeamView: TeamScoreView
     
     init(matchModel: MatchViewModel) {
         matchTimeView = MatchTimeView(matchTimeViewModel: matchModel.matchTimeViewModel)

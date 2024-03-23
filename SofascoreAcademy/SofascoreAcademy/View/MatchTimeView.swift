@@ -10,11 +10,11 @@ import SofaAcademic
 
 class MatchTimeView: BaseView {
     
-    let matchTimeViewModel: MatchTimeViewModel
+    private let matchTimeViewModel: MatchTimeViewModel
     
-    let startTimeLabel: UILabel = UILabel()
-    let currentMinuteLabel: UILabel = UILabel()
-    let divider: UIView = UIView()
+    private let startTimeLabel: UILabel = UILabel()
+    private let currentMinuteLabel: UILabel = UILabel()
+    private let divider: UIView = UIView()
     
     init(matchTimeViewModel: MatchTimeViewModel) {
         self.matchTimeViewModel = matchTimeViewModel
