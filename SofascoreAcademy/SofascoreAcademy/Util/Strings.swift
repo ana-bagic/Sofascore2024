@@ -9,5 +9,5 @@ import Foundation
 
 struct Strings {
     
-    static let finishedMatch: String = "FT"
+    static let finishedEvent: String = "FT"
 }

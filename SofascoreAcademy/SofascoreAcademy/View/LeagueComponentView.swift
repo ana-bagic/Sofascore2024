@@ -11,13 +11,13 @@ import SofaAcademic
 class LeagueComponentView: BaseView {
     
     private let leagueHeaderView: LeagueHeaderView
-    private let matchesStackView: UIStackView = UIStackView()
+    private let eventsStackView: UIStackView = UIStackView()
     
-    init(league: League, matches: Array<Match>) {
+    init(league: League, events: Array<Event>) {
         leagueHeaderView = LeagueHeaderView(league: league)
-        for match in matches {
-            let matchViewModel: MatchViewModel = MatchViewModel(matchModel: match)
-            matchesStackView.addArrangedSubview(MatchView(matchModel: matchViewModel))
+        for event in events {
+            let eventViewModel: EventViewModel = EventViewModel(eventModel: event)
+            eventsStackView.addArrangedSubview(EventView(eventModel: eventViewModel))
         }
         
         super.init()
@@ -25,11 +25,11 @@ class LeagueComponentView: BaseView {
     
     override func addViews() {
         addSubview(leagueHeaderView)
-        addSubview(matchesStackView)
+        addSubview(eventsStackView)
     }
 
     override func styleViews() {
-        matchesStackView.axis = .vertical
+        eventsStackView.axis = .vertical
     }
     
     override func setupConstraints() {
@@ -37,7 +37,7 @@ class LeagueComponentView: BaseView {
             $0.top.leading.trailing.equalToSuperview()
         }
         
-        matchesStackView.snp.makeConstraints() {
+        eventsStackView.snp.makeConstraints() {
             $0.top.equalTo(leagueHeaderView.snp.bottom)
             $0.leading.trailing.bottom.equalToSuperview()
         }

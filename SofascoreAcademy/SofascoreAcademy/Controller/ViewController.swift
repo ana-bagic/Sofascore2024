@@ -10,7 +10,7 @@ import SnapKit
 
 class ViewController: UIViewController {
     
-    private let leagueComponent: LeagueComponentView = LeagueComponentView(league: createMockLeague(), matches: createMockMatches())
+    private let leagueComponent: LeagueComponentView = LeagueComponentView(league: createMockLeague(), events: createMockEvents())
 
     override func viewDidLoad() {
         super.viewDidLoad()

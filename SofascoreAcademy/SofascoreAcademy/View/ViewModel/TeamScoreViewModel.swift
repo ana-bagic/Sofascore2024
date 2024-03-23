@@ -1,5 +1,5 @@
 //
-//  TeamViewModel.swift
+//  TeamScoreViewModel.swift
 //  SofascoreAcademy
 //
 //  Created by Akademija on 21.03.2024..

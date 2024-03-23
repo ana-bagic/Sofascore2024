@@ -1,5 +1,5 @@
 //
-//  MatchTimeView.swift
+//  EventTimeView.swift
 //  SofascoreAcademy
 //
 //  Created by Akademija on 22.03.2024..
@@ -8,16 +8,16 @@
 import UIKit
 import SofaAcademic
 
-class MatchTimeView: BaseView {
+class EventTimeView: BaseView {
     
-    private let matchTimeViewModel: MatchTimeViewModel
+    private let eventTimeViewModel: EventTimeViewModel
     
     private let startTimeLabel: UILabel = UILabel()
     private let currentMinuteLabel: UILabel = UILabel()
     private let divider: UIView = UIView()
     
-    init(matchTimeViewModel: MatchTimeViewModel) {
-        self.matchTimeViewModel = matchTimeViewModel
+    init(eventTimeViewModel: EventTimeViewModel) {
+        self.eventTimeViewModel = eventTimeViewModel
         super.init()
     }
     
@@ -28,14 +28,14 @@ class MatchTimeView: BaseView {
     }
 
     override func styleViews() {
-        startTimeLabel.text = matchTimeViewModel.startTime
+        startTimeLabel.text = eventTimeViewModel.startTime
         startTimeLabel.font = .micro
         startTimeLabel.textColor = .onSurfaceLv2
         startTimeLabel.textAlignment = .center
         
-        currentMinuteLabel.text = matchTimeViewModel.currentMinute
+        currentMinuteLabel.text = eventTimeViewModel.currentMinute
         currentMinuteLabel.font = .micro
-        currentMinuteLabel.textColor = matchTimeViewModel.currentMinuteColor
+        currentMinuteLabel.textColor = eventTimeViewModel.currentMinuteColor
         currentMinuteLabel.textAlignment = .center
         
         divider.backgroundColor = .onSurfaceLv4

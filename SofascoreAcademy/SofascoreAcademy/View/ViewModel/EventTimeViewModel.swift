@@ -1,5 +1,5 @@
 //
-//  MatchTimeViewModel.swift
+//  EventTimeViewModel.swift
 //  SofascoreAcademy
 //
 //  Created by Akademija on 22.03.2024..
@@ -7,15 +7,15 @@
 
 import UIKit
 
-struct MatchTimeViewModel {
+struct EventTimeViewModel {
     
     let startTime: String
     let currentMinute: String
     let currentMinuteColor: UIColor
     
-    init(startTime: String, currentMinute: String, matchStatus: MatchStatus) {
+    init(startTime: String, currentMinute: String, eventStatus: EventStatus) {
         self.startTime = startTime
         self.currentMinute = currentMinute
-        self.currentMinuteColor = matchStatus == .inProgress ? .specificLive : .onSurfaceLv2
+        self.currentMinuteColor = eventStatus == .inProgress ? .specificLive : .onSurfaceLv2
     }
 }
