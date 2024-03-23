@@ -9,26 +9,21 @@ import SnapKit
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let leagueComponent: LeagueComponentView = LeagueComponentView(league: createMockLeague(), matches: createMockMatches())
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .secondaryVariant
-        
-        let league = createMockLeague()
-        let matches = createMockMatches()
-        
-        let leagueComponent: LeagueComponentView = LeagueComponentView(league: league, matches: matches)
-        
         view.addSubview(leagueComponent)
+        
+        view.backgroundColor = .secondaryVariant
+        leagueComponent.backgroundColor = .surface1
         
         leagueComponent.snp.makeConstraints() {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(30)
-            $0.leading.width.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
         }
-        
-        leagueComponent.backgroundColor = .surface1
     }
 
 }
-
