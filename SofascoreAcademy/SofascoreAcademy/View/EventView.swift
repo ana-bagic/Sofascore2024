@@ -10,15 +10,18 @@ import SofaAcademic
 
 class EventView: BaseView {
     
-    private let eventTimeView: EventTimeView
-    private let homeTeamView: TeamScoreView
-    private let awayTeamView: TeamScoreView
+    private let eventTimeView: EventTimeView = EventTimeView()
+    private let homeTeamView: TeamScoreView = TeamScoreView()
+    private let awayTeamView: TeamScoreView = TeamScoreView()
     
-    init(eventModel: EventViewModel) {
-        eventTimeView = EventTimeView(eventTimeViewModel: eventModel.eventTimeViewModel)
-        homeTeamView = TeamScoreView(teamScoreViewModel: eventModel.homeTeamViewModel)
-        awayTeamView = TeamScoreView(teamScoreViewModel: eventModel.awayTeamViewModel)
+    override init() {
         super.init()
+    }
+    
+    func setupData(eventModel: EventViewModel) {
+        eventTimeView.setupData(eventTimeViewModel: eventModel.eventTimeViewModel)
+        homeTeamView.setupData(teamScoreViewModel: eventModel.homeTeamViewModel)
+        awayTeamView.setupData(teamScoreViewModel: eventModel.awayTeamViewModel)
     }
     
     override func addViews() {

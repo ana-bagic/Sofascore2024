@@ -190,8 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				D2A8909F2BACBD610021EF9D /* EventViewModel.swift */,
-				D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */,
 				D2A890A72BADB5900021EF9D /* EventTimeViewModel.swift */,
+				D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,11 +241,11 @@
 			isa = PBXGroup;
 			children = (
 				D2A8909E2BACBCED0021EF9D /* ViewModel */,
+				D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */,
 				D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */,
 				D2D9DF952BA63FF600702087 /* EventView.swift */,
-				D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */,
-				D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */,
 				D2A890A52BADB5330021EF9D /* EventTimeView.swift */,
+				D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

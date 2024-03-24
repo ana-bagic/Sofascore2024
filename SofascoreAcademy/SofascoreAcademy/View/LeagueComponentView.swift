@@ -10,14 +10,16 @@ import SofaAcademic
 
 class LeagueComponentView: BaseView {
     
-    private let leagueHeaderView: LeagueHeaderView
+    private let leagueHeaderView: LeagueHeaderView = LeagueHeaderView()
     private let eventsStackView: UIStackView = UIStackView()
     
     init(league: League, events: Array<Event>) {
-        leagueHeaderView = LeagueHeaderView(league: league)
+        leagueHeaderView.setupData(league: league)
         for event in events {
             let eventViewModel: EventViewModel = EventViewModel(eventModel: event)
-            eventsStackView.addArrangedSubview(EventView(eventModel: eventViewModel))
+            let eventView: EventView = EventView()
+            eventView.setupData(eventModel: eventViewModel)
+            eventsStackView.addArrangedSubview(eventView)
         }
         
         super.init()

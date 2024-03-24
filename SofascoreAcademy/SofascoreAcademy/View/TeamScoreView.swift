@@ -10,15 +10,20 @@ import SofaAcademic
 
 class TeamScoreView: BaseView {
     
-    private let teamScoreViewModel: TeamScoreViewModel
-    
     private let teamLogoImageView: UIImageView = UIImageView()
     private let teamNameLabel: UILabel = UILabel()
     private let teamScoreLabel: UILabel = UILabel()
     
-    init(teamScoreViewModel: TeamScoreViewModel) {
-        self.teamScoreViewModel = teamScoreViewModel
+    override init() {
         super.init()
+    }
+    
+    func setupData(teamScoreViewModel: TeamScoreViewModel) {
+        teamLogoImageView.image = teamScoreViewModel.logoImage
+        teamNameLabel.text = teamScoreViewModel.teamName
+        teamNameLabel.textColor = teamScoreViewModel.teamNameColor
+        teamScoreLabel.text = teamScoreViewModel.teamScore
+        teamScoreLabel.textColor = teamScoreViewModel.teamScoreColor
     }
     
     override func addViews() {
@@ -28,15 +33,9 @@ class TeamScoreView: BaseView {
     }
 
     override func styleViews() {
-        teamLogoImageView.image = teamScoreViewModel.logoImage
-        
-        teamNameLabel.text = teamScoreViewModel.teamName
         teamNameLabel.font = .body
-        teamNameLabel.textColor = teamScoreViewModel.teamNameColor
         
-        teamScoreLabel.text = teamScoreViewModel.teamScore
         teamScoreLabel.font = .body
-        teamScoreLabel.textColor = teamScoreViewModel.teamScoreColor
         teamScoreLabel.textAlignment = .right
     }
     

@@ -10,17 +10,20 @@ import SofaAcademic
 
 class LeagueHeaderView: BaseView {
     
-    private var leagueModel: League
-    
     private let leagueLogoImageView: UIImageView = UIImageView()
     private let countryLabel: UILabel = UILabel()
     private let leagueNameLabel: UILabel = UILabel()
     private let arrowImageView: UIImageView = UIImageView(image: .arrow)
     private let horizontalStackView: UIStackView = UIStackView()
     
-    init(league: League) {
-        leagueModel = league
+    override init() {
         super.init()
+    }
+    
+    func setupData(league: League) {
+        leagueLogoImageView.image = league.logoImage
+        countryLabel.text = league.countryName
+        leagueNameLabel.text = league.leagueName
     }
     
     override func addViews() {
@@ -33,15 +36,11 @@ class LeagueHeaderView: BaseView {
     }
 
     override func styleViews() {
-        leagueLogoImageView.image = leagueModel.logoImage
-        
         horizontalStackView.alignment = .center
-
-        countryLabel.text = leagueModel.countryName
+        
         countryLabel.font = .headline3
         countryLabel.textColor = .onSurfaceLv1
-        
-        leagueNameLabel.text = leagueModel.leagueName
+
         leagueNameLabel.font = .headline3
         leagueNameLabel.textColor = .onSurfaceLv2
         

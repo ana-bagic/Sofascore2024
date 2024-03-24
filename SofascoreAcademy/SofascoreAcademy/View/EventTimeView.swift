@@ -10,15 +10,18 @@ import SofaAcademic
 
 class EventTimeView: BaseView {
     
-    private let eventTimeViewModel: EventTimeViewModel
-    
     private let startTimeLabel: UILabel = UILabel()
     private let currentMinuteLabel: UILabel = UILabel()
     private let divider: UIView = UIView()
     
-    init(eventTimeViewModel: EventTimeViewModel) {
-        self.eventTimeViewModel = eventTimeViewModel
+    override init() {
         super.init()
+    }
+    
+    func setupData(eventTimeViewModel: EventTimeViewModel) {
+        startTimeLabel.text = eventTimeViewModel.startTime
+        currentMinuteLabel.text = eventTimeViewModel.currentMinute
+        currentMinuteLabel.textColor = eventTimeViewModel.currentMinuteColor
     }
     
     override func addViews() {
@@ -28,14 +31,11 @@ class EventTimeView: BaseView {
     }
 
     override func styleViews() {
-        startTimeLabel.text = eventTimeViewModel.startTime
         startTimeLabel.font = .micro
         startTimeLabel.textColor = .onSurfaceLv2
         startTimeLabel.textAlignment = .center
         
-        currentMinuteLabel.text = eventTimeViewModel.currentMinute
         currentMinuteLabel.font = .micro
-        currentMinuteLabel.textColor = eventTimeViewModel.currentMinuteColor
         currentMinuteLabel.textAlignment = .center
         
         divider.backgroundColor = .onSurfaceLv4
