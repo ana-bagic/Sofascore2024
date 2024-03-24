@@ -24,7 +24,7 @@ struct EventViewModel {
         
         switch eventModel.eventStatus {
         case .notStarted:
-            currentMinute = String("-")
+            currentMinute = .notStartedEvent
             homeTeamScore = String()
             awayTeamScore = String()
         case .inProgress:
@@ -32,7 +32,7 @@ struct EventViewModel {
             homeTeamScore = optionalIntToString(intNumber: eventModel.homeTeamScore)
             awayTeamScore = optionalIntToString(intNumber: eventModel.awayTeamScore)
         case .finished:
-            currentMinute = Strings.finishedEvent
+            currentMinute = .finishedEvent
             homeTeamScore = optionalIntToString(intNumber: eventModel.homeTeamScore)
             awayTeamScore = optionalIntToString(intNumber: eventModel.awayTeamScore)
             
