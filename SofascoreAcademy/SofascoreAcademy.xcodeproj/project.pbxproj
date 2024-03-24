@@ -8,14 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		D239D8EF2B99FC3100C843E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */; };
-		D239D8F12B99FC3200C843E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */; };
-		D239D8F32B99FC3200C843E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D8F22B99FC3200C843E2 /* ViewController.swift */; };
-		D239D8F62B99FC3200C843E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D239D8F42B99FC3200C843E2 /* Main.storyboard */; };
+		D239D8F32B99FC3200C843E2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D8F22B99FC3200C843E2 /* EventViewController.swift */; };
 		D239D8F82B99FC3400C843E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D239D8F72B99FC3400C843E2 /* Assets.xcassets */; };
 		D239D8FB2B99FC3400C843E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D239D8F92B99FC3400C843E2 /* LaunchScreen.storyboard */; };
 		D239D9062B99FC3400C843E2 /* SofascoreAcademyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D9052B99FC3400C843E2 /* SofascoreAcademyTests.swift */; };
 		D239D9102B99FC3400C843E2 /* SofascoreAcademyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D90F2B99FC3400C843E2 /* SofascoreAcademyUITests.swift */; };
 		D239D9122B99FC3400C843E2 /* SofascoreAcademyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239D9112B99FC3400C843E2 /* SofascoreAcademyUITestsLaunchTests.swift */; };
+		D2A2E6BC2BB0597D00F02412 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A2E6BB2BB0597D00F02412 /* EventCell.swift */; };
+		D2A2E6BE2BB059F100F02412 /* LeagueHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A2E6BD2BB059F100F02412 /* LeagueHeaderCell.swift */; };
+		D2A8909D2BACA99D0021EF9D /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */; };
+		D2A890A02BACBD610021EF9D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8909F2BACBD610021EF9D /* EventViewModel.swift */; };
+		D2A890A22BACBDCC0021EF9D /* TeamScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */; };
+		D2A890A42BADAF130021EF9D /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A32BADAF130021EF9D /* DateHelper.swift */; };
+		D2A890A62BADB5330021EF9D /* EventTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A52BADB5330021EF9D /* EventTimeView.swift */; };
+		D2A890A82BADB5900021EF9D /* EventTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A72BADB5900021EF9D /* EventTimeViewModel.swift */; };
+		D2A890AA2BAF32D80021EF9D /* MiscUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A890A92BAF32D80021EF9D /* MiscUtil.swift */; };
+		D2D9DF642BA5017500702087 /* SofaAcademic in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF632BA5017500702087 /* SofaAcademic */; };
+		D2D9DF692BA5750E00702087 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF682BA5750E00702087 /* SnapKit */; };
+		D2D9DF6B2BA5750E00702087 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF6A2BA5750E00702087 /* SnapKit-Dynamic */; };
+		D2D9DF6D2BA5750E00702087 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D2D9DF6A2BA5750E00702087 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D2D9DF702BA5FB5C00702087 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF6F2BA5FB5C00702087 /* League.swift */; };
+		D2D9DF732BA5FF0800702087 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF722BA5FF0800702087 /* Event.swift */; };
+		D2D9DF752BA5FF3F00702087 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF742BA5FF3F00702087 /* Team.swift */; };
+		D2D9DF842BA6079500702087 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF832BA6079500702087 /* Fonts.swift */; };
+		D2D9DF862BA608F800702087 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF852BA608F800702087 /* Strings.swift */; };
+		D2D9DF8A2BA60E7400702087 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF892BA60E7400702087 /* Colors.swift */; };
+		D2D9DF8C2BA610ED00702087 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF8B2BA610ED00702087 /* DataMock.swift */; };
+		D2D9DF8F2BA615C400702087 /* LeagueHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */; };
+		D2D9DF902BA63F4500702087 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2D9DF812BA6067A00702087 /* Roboto-Regular.ttf */; };
+		D2D9DF912BA63F4900702087 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2D9DF822BA6067D00702087 /* RobotoCondensed-Regular.ttf */; };
+		D2D9DF922BA63F4D00702087 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2D9DF802BA6067700702087 /* Roboto-Bold.ttf */; };
+		D2D9DF962BA63FF600702087 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF952BA63FF600702087 /* EventView.swift */; };
+		D2D9DF982BA6400E00702087 /* LeagueComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +59,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D2D9DF6C2BA5750E00702087 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D2D9DF6D2BA5750E00702087 /* SnapKit-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D239D8EB2B99FC3100C843E2 /* SofascoreAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofascoreAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D239D8F22B99FC3200C843E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D239D8F52B99FC3200C843E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D239D8F22B99FC3200C843E2 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		D239D8F72B99FC3400C843E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D239D8FA2B99FC3400C843E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D239D8FC2B99FC3400C843E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +85,28 @@
 		D239D90B2B99FC3400C843E2 /* SofascoreAcademyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofascoreAcademyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D239D90F2B99FC3400C843E2 /* SofascoreAcademyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofascoreAcademyUITests.swift; sourceTree = "<group>"; };
 		D239D9112B99FC3400C843E2 /* SofascoreAcademyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofascoreAcademyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2A2E6BB2BB0597D00F02412 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		D2A2E6BD2BB059F100F02412 /* LeagueHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueHeaderCell.swift; sourceTree = "<group>"; };
+		D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
+		D2A8909F2BACBD610021EF9D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreViewModel.swift; sourceTree = "<group>"; };
+		D2A890A32BADAF130021EF9D /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		D2A890A52BADB5330021EF9D /* EventTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTimeView.swift; sourceTree = "<group>"; };
+		D2A890A72BADB5900021EF9D /* EventTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTimeViewModel.swift; sourceTree = "<group>"; };
+		D2A890A92BAF32D80021EF9D /* MiscUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscUtil.swift; sourceTree = "<group>"; };
+		D2D9DF6F2BA5FB5C00702087 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		D2D9DF722BA5FF0800702087 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D2D9DF742BA5FF3F00702087 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		D2D9DF802BA6067700702087 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		D2D9DF812BA6067A00702087 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		D2D9DF822BA6067D00702087 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		D2D9DF832BA6079500702087 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D2D9DF852BA608F800702087 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		D2D9DF892BA60E7400702087 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D2D9DF8B2BA610ED00702087 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
+		D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueHeaderView.swift; sourceTree = "<group>"; };
+		D2D9DF952BA63FF600702087 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueComponentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D9DF642BA5017500702087 /* SofaAcademic in Frameworks */,
+				D2D9DF692BA5750E00702087 /* SnapKit in Frameworks */,
+				D2D9DF6B2BA5750E00702087 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +144,7 @@
 				D239D9042B99FC3400C843E2 /* SofascoreAcademyTests */,
 				D239D90E2B99FC3400C843E2 /* SofascoreAcademyUITests */,
 				D239D8EC2B99FC3100C843E2 /* Products */,
+				D2D9DF672BA5750E00702087 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +161,11 @@
 		D239D8ED2B99FC3100C843E2 /* SofascoreAcademy */ = {
 			isa = PBXGroup;
 			children = (
+				D2D9DF942BA63F8000702087 /* Controller */,
+				D2D9DF8D2BA615AE00702087 /* View */,
+				D2D9DF762BA6029900702087 /* Util */,
+				D2D9DF6E2BA5F91A00702087 /* Model */,
 				D239D8EE2B99FC3100C843E2 /* AppDelegate.swift */,
-				D239D8F02B99FC3200C843E2 /* SceneDelegate.swift */,
-				D239D8F22B99FC3200C843E2 /* ViewController.swift */,
-				D239D8F42B99FC3200C843E2 /* Main.storyboard */,
 				D239D8F72B99FC3400C843E2 /* Assets.xcassets */,
 				D239D8F92B99FC3400C843E2 /* LaunchScreen.storyboard */,
 				D239D8FC2B99FC3400C843E2 /* Info.plist */,
@@ -127,6 +190,80 @@
 			path = SofascoreAcademyUITests;
 			sourceTree = "<group>";
 		};
+		D2A8909E2BACBCED0021EF9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8909F2BACBD610021EF9D /* EventViewModel.swift */,
+				D2A890A72BADB5900021EF9D /* EventTimeViewModel.swift */,
+				D2A890A12BACBDCC0021EF9D /* TeamScoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2D9DF672BA5750E00702087 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2D9DF6E2BA5F91A00702087 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2D9DF6F2BA5FB5C00702087 /* League.swift */,
+				D2D9DF722BA5FF0800702087 /* Event.swift */,
+				D2D9DF742BA5FF3F00702087 /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2D9DF762BA6029900702087 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D2D9DF7F2BA6066F00702087 /* fonts */,
+				D2D9DF832BA6079500702087 /* Fonts.swift */,
+				D2D9DF852BA608F800702087 /* Strings.swift */,
+				D2D9DF892BA60E7400702087 /* Colors.swift */,
+				D2D9DF8B2BA610ED00702087 /* DataMock.swift */,
+				D2A890A32BADAF130021EF9D /* DateHelper.swift */,
+				D2A890A92BAF32D80021EF9D /* MiscUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D2D9DF7F2BA6066F00702087 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D2D9DF812BA6067A00702087 /* Roboto-Regular.ttf */,
+				D2D9DF822BA6067D00702087 /* RobotoCondensed-Regular.ttf */,
+				D2D9DF802BA6067700702087 /* Roboto-Bold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		D2D9DF8D2BA615AE00702087 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8909E2BACBCED0021EF9D /* ViewModel */,
+				D2D9DF972BA6400E00702087 /* LeagueComponentView.swift */,
+				D2D9DF8E2BA615C400702087 /* LeagueHeaderView.swift */,
+				D2D9DF952BA63FF600702087 /* EventView.swift */,
+				D2A890A52BADB5330021EF9D /* EventTimeView.swift */,
+				D2A8909C2BACA99D0021EF9D /* TeamScoreView.swift */,
+				D2A2E6BD2BB059F100F02412 /* LeagueHeaderCell.swift */,
+				D2A2E6BB2BB0597D00F02412 /* EventCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2D9DF942BA63F8000702087 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D239D8F22B99FC3200C843E2 /* EventViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +274,18 @@
 				D239D8E72B99FC3100C843E2 /* Sources */,
 				D239D8E82B99FC3100C843E2 /* Frameworks */,
 				D239D8E92B99FC3100C843E2 /* Resources */,
+				D2D9DF6C2BA5750E00702087 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SofascoreAcademy;
+			packageProductDependencies = (
+				D2D9DF632BA5017500702087 /* SofaAcademic */,
+				D2D9DF682BA5750E00702087 /* SnapKit */,
+				D2D9DF6A2BA5750E00702087 /* SnapKit-Dynamic */,
+			);
 			productName = SofascoreAcademy;
 			productReference = D239D8EB2B99FC3100C843E2 /* SofascoreAcademy.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +358,10 @@
 				Base,
 			);
 			mainGroup = D239D8E22B99FC3100C843E2;
+			packageReferences = (
+				D2D9DF622BA5017500702087 /* XCRemoteSwiftPackageReference "academy" */,
+				D2D9DF662BA5029F00702087 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D239D8EC2B99FC3100C843E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +378,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D9DF902BA63F4500702087 /* Roboto-Regular.ttf in Resources */,
 				D239D8FB2B99FC3400C843E2 /* LaunchScreen.storyboard in Resources */,
+				D2D9DF922BA63F4D00702087 /* Roboto-Bold.ttf in Resources */,
+				D2D9DF912BA63F4900702087 /* RobotoCondensed-Regular.ttf in Resources */,
 				D239D8F82B99FC3400C843E2 /* Assets.xcassets in Resources */,
-				D239D8F62B99FC3200C843E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +407,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D239D8F32B99FC3200C843E2 /* ViewController.swift in Sources */,
+				D2D9DF842BA6079500702087 /* Fonts.swift in Sources */,
+				D2A890A22BACBDCC0021EF9D /* TeamScoreViewModel.swift in Sources */,
+				D2A8909D2BACA99D0021EF9D /* TeamScoreView.swift in Sources */,
+				D2A890AA2BAF32D80021EF9D /* MiscUtil.swift in Sources */,
+				D2D9DF8A2BA60E7400702087 /* Colors.swift in Sources */,
+				D2D9DF752BA5FF3F00702087 /* Team.swift in Sources */,
+				D2D9DF862BA608F800702087 /* Strings.swift in Sources */,
+				D239D8F32B99FC3200C843E2 /* EventViewController.swift in Sources */,
+				D2D9DF982BA6400E00702087 /* LeagueComponentView.swift in Sources */,
+				D2A890A02BACBD610021EF9D /* EventViewModel.swift in Sources */,
+				D2A890A42BADAF130021EF9D /* DateHelper.swift in Sources */,
 				D239D8EF2B99FC3100C843E2 /* AppDelegate.swift in Sources */,
-				D239D8F12B99FC3200C843E2 /* SceneDelegate.swift in Sources */,
+				D2A2E6BC2BB0597D00F02412 /* EventCell.swift in Sources */,
+				D2A890A82BADB5900021EF9D /* EventTimeViewModel.swift in Sources */,
+				D2D9DF702BA5FB5C00702087 /* League.swift in Sources */,
+				D2D9DF8F2BA615C400702087 /* LeagueHeaderView.swift in Sources */,
+				D2D9DF732BA5FF0800702087 /* Event.swift in Sources */,
+				D2A890A62BADB5330021EF9D /* EventTimeView.swift in Sources */,
+				D2D9DF962BA63FF600702087 /* EventView.swift in Sources */,
+				D2A2E6BE2BB059F100F02412 /* LeagueHeaderCell.swift in Sources */,
+				D2D9DF8C2BA610ED00702087 /* DataMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +464,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D239D8F42B99FC3200C843E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D239D8F52B99FC3200C843E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D239D8F92B99FC3400C843E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,11 +601,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MSJ826473;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SofascoreAcademy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,11 +628,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MSJ826473;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SofascoreAcademy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +760,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2D9DF622BA5017500702087 /* XCRemoteSwiftPackageReference "academy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sofascore/academy";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D2D9DF662BA5029F00702087 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2D9DF632BA5017500702087 /* SofaAcademic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2D9DF622BA5017500702087 /* XCRemoteSwiftPackageReference "academy" */;
+			productName = SofaAcademic;
+		};
+		D2D9DF682BA5750E00702087 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2D9DF662BA5029F00702087 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D2D9DF6A2BA5750E00702087 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2D9DF662BA5029F00702087 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D239D8E32B99FC3100C843E2 /* Project object */;
 }
